@@ -91,7 +91,7 @@ const startParse = async() => {
 function isNew(oldUrl, newUrl){
     if(oldUrl === newUrl){
         console.log(' oldUrl === newUrl ');
-        
+        bot.telegram.sendMessage(user_id, ' oldUrl === newUrl ')
     }else{
         console.log(lastUrl)
         console.log(' oldUrl != newUrl ');
